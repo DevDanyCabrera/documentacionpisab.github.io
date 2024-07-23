@@ -1,12 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Desplazamiento suave para los enlaces de navegación
+  // Desplazamiento suave para los enlaces de navegación internos
   const links = document.querySelectorAll('#top-nav ul li a');
 
   links.forEach(link => {
     link.addEventListener('click', function(e) {
+      const href = link.getAttribute('href');
+
+      // Si el enlace es a clases.html, no prevenir el comportamiento por defecto
+      if (href === 'clases.html') {
+        return;
+      }
+
       e.preventDefault();
 
-      const targetId = link.getAttribute('href').substring(1);
+      const targetId = href.substring(1);
       const targetElement = document.getElementById(targetId);
 
       window.scrollTo({
