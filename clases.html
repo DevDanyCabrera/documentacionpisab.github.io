@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación de Clases</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Documentación de Clases</h1>
+</header>
+<nav id="top-nav">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#clase1">Clases</a></li>
+        <li><a href="#tda">TDA</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <main>
+        <section id="clase1">
+            <h2>Clase cicloControl</h2>
+            <p>La clase cicloControl representa un controlador para manejar los ciclos académicos.</p>
+            <pre><code>
+class cicloControl:
+    def __init__(self):
+        self.__ciclo = Ciclo()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase2">
+            <h2>Clase AsignacionControl</h2>
+            <p>La clase AsignacionControl representa un controlador para manejar las asignaciones.</p>
+            <pre><code>
+class AsignacionControl:
+    def __init__(self):
+        self.__asignacion = Asignacion()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase3">
+            <h2>Clase EstudianteControl</h2>
+            <p>La clase EstudianteControl representa un controlador para manejar a los estudiantes.</p>
+            <pre><code>
+class EstudianteControl:
+    def __init__(self):
+        self.__estudiante = Estudiante()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase4">
+            <h2>Clase DocenteControl</h2>
+            <p>La clase DocenteControl representa un controlador para manejar a los docentes.</p>
+            <pre><code>
+class DocenteControl:
+    def __init__(self):
+        self.__docente = Docente()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase5">
+            <h2>Clase mallaControl</h2>
+            <p>La clase mallaControl representa un controlador para manejar la malla curricular.</p>
+            <pre><code>
+class mallaControl:
+    def __init__(self):
+        self.__malla = Malla()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase6">
+            <h2>Clase cuentaControl</h2>
+            <p>La clase cuentaControl representa un controlador para manejar las cuentas de usuario.</p>
+            <pre><code>
+class cuentaControl:
+    def __init__(self):
+        self.__cuenta = Cuenta()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase7">
+            <h2>Clase cursaControl</h2>
+            <p>La clase cursaControl representa un controlador para manejar las cursas de los estudiantes.</p>
+            <pre><code>
+class cursaControl:
+    def __init__(self):
+        self.__cursa = Cursa()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase8">
+            <h2>Clase MateriaControl</h2>
+            <p>La clase MateriaControl representa un controlador para manejar las materias.</p>
+            <pre><code>
+class MateriaControl:
+    def __init__(self):
+        self._materia = Materia()
+        self._lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase9">
+            <h2>Clase parametrosControl</h2>
+            <p>La clase parametrosControl representa un controlador para manejar los parámetros del sistema.</p>
+            <pre><code>
+class parametrosControl:
+    def __init__(self):
+        self.__parametros = Parametros()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase10">
+            <h2>Clase PersonaControl</h2>
+            <p>La clase PersonaControl representa un controlador para manejar los datos personales.</p>
+            <pre><code>
+class PersonaControl:
+    def __init__(self):
+        self.__persona = Persona()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase11">
+            <h2>Clase cuentaControl</h2>
+            <p>La clase cuentaControl también puede manejar los roles de los usuarios.</p>
+            <pre><code>
+class cuentaControl:
+    def __init__(self):
+        self.__rol = Rol()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="clase12">
+            <h2>Clase unidadControl</h2>
+            <p>La clase unidadControl representa un controlador para manejar las unidades académicas.</p>
+            <pre><code>
+class unidadControl:
+    def __init__(self):
+        self.__unidad = Unidad()
+        self.__lista = LinkedList()
+                </code></pre>
+        </section>
+        <section id="tda">
+            <h2>TDA: TDAArray</h2>
+            <p>La clase TDAArray representa un tipo de dato abstracto para manejar arreglos.</p>
+            <pre><code>
+class TDAArray:
+    def __init__(self, size, value=None):
+        self.__size = size
+        self.__position = 0
+        if size > 0:
+            self.__array = []
+            for i in range(0, self.__size):
+                self.__array.append(None)
+        else:
+            self.__array = None
+                </code></pre>
+        </section>
+    </main>
+</div>
+<footer>
+    <p>&copy; 2024 Universidad Nacional de Loja</p>
+</footer>
+<button id="scrollToTopBtn">&#8679;</button>
+<script src="js/scripts.js"></script>
+</body>
+</html>
